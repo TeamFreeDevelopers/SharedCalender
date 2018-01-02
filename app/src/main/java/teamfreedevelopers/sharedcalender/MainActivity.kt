@@ -12,9 +12,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val items = arrayOf("item a", "item b", "item c")
-        val adapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items)
+        // TODO Google API叩いてデータ取得する
 
+        // TODO カレンダーのデータを詰める
+
+        // TODO 選択した日の詳細情報をListに詰める
+        val items = arrayOf("item a", "item b", "item c")
+
+        //　List部分に詰める
+        val adapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items)
         listView.adapter = adapter
 
     }
